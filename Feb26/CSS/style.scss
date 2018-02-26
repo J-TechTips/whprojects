@@ -1,0 +1,55 @@
+body
+{
+    color:white;
+    font-size: 21px;
+    font-family: fantasy;
+    background-color: red;
+}
+a
+{
+    color: white;
+}
+nav
+{
+    border: 10px dashed green;
+}
+ul
+{
+    background-color: blue;
+}
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+article
+{
+    width: 75%;
+    // background-color: green;
+    // float: left;
+}
+aside
+{
+    width: 25%
+    // float: right;
+}
+section
+{
+    width: 100%;
+    background-color: magenta;
+}
+header
+{
+    display: flex;
+    // flex-wrap: wrap;
+    width: 50%;
+    img
+    {
+        margin-right: 15px;
+        // width: 25%;
+    }
+    nav
+    {
+        width: 75%;
+    }
+}

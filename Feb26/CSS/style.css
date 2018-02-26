@@ -1,0 +1,50 @@
+body {
+  color: white;
+  font-size: 21px;
+  font-family: fantasy;
+  background-color: red;
+}
+
+a {
+  color: white;
+}
+
+nav {
+  border: 10px dashed green;
+}
+
+ul {
+  background-color: blue;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 75%;
+}
+
+aside {
+  width: 25%;
+}
+
+section {
+  width: 100%;
+  background-color: magenta;
+}
+
+header {
+  display: flex;
+  width: 50%;
+}
+
+header img {
+  margin-right: 15px;
+}
+
+header nav {
+  width: 75%;
+}
+/*# sourceMappingURL=style.css.map */
