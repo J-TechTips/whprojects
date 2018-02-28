@@ -1,0 +1,53 @@
+body
+{
+    background-color: pink;
+}
+h1
+{
+    text-align: center;
+    color: goldenrod;
+}
+section
+{
+    background-color: midnightblue;
+    padding:10px;
+    margin:50px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    /* X
+        flex-direction: row;This the default - left to right
+        flex-direction: row-reverse;This is the reverse of the default
+        flex-direction: column;This is top to bottom
+        flex-direction: column-reverse;This is botom to top
+    */
+    /*  Y
+        flex-start keeps them on the left side
+        flex-end keeps them on the right side
+        flex-center keeps them in the center
+        space-between keeps each element spaced between each other
+        space-around keeps space on both sides of the element
+    */
+    // justify-content: flex-start;
+
+    align-items: stretch;
+
+    /*  Z
+        align-items: flex-start; This is the default
+        align-items: flex-end; This the opposite of flex-start
+        align-items: stretch; This stretches as big as the flex container
+    */
+}
+div
+{
+    flex: 1; 
+    /*Uses all of the avaliable space useable by the element*/
+    // width:5000px;
+    // height: 50px;
+    font-size: 48px;
+    color: white;
+    background-color: red;
+    margin: 5px;
+    text-align: center;
+}
