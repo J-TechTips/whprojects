@@ -1,0 +1,108 @@
+$keycolor: hsl(181,100%, 41%);
+$white: hsl(0, 0, 96%);
+$black: hsl(0, 0%, 8%);
+html
+{
+    
+}
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+header
+{
+    padding:10vw 2vw;
+    background-color: $keycolor;
+    text-align: center;
+    color: $white;
+}
+// this the order you use 
+a:link
+{
+    color: inherit;
+}
+a:visited
+{
+    color: lime;
+}
+a:hover
+{
+    color:red;
+}
+a:active
+{
+    color: purple;
+}
+a
+{
+    color: $white;
+}
+a.button
+{
+    background-color: transparentize($black, .75);
+    color: $white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 300ms;
+    transform: rotate(0deg);
+}
+a.button:hover
+{
+    background-color: transparentize($black, .90);
+    transform: rotate(360deg);
+}
+ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1
+{
+    font-size: 40px;
+    font-weight: 200;
+}
+h2
+{
+    font-size: 1.75vw;
+    font-weight: 100;
+    margin: 45px;
+}
+#features h2
+{
+    border-bottom: 3px double $black;
+    display: inline-block;
+}
+header div
+{
+    width: 35%;
+    padding: 5vw;
+    border-width: 4px 1px;
+    border-style: double solid;
+    border-color: $white;
+    margin: 0 auto;
+}
+#features
+{
+    text-align: center;    
+}
+#features ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li
+    {
+        width: 25%;
+        padding: 40px;
+        border: 1px solid $black;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    i
+    {
+        font-size: 200%;
+        color: $keycolor;
+    }
+}
