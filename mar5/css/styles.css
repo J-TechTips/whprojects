@@ -1,0 +1,40 @@
+main {
+  background-color: cadetblue;
+  height: 50vh;
+  position: relative;
+}
+
+.img1 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.img2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.img3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.img4 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,48 @@
+main
+{
+    background-color: cadetblue;
+    height: 50vh;
+    position: relative;
+}
+.img1
+{
+    position: absolute;
+    // top: ;
+    right: 0px;
+    bottom: 0px;
+    // left: ;
+}
+.img2
+{
+    position: absolute;
+    // top: ;
+    // right: ;
+    bottom: 0px;
+    left: 0px;
+}
+.img3
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    // bottom: 20px;
+    // left: 20px;
+    z-index: 5;
+}
+.img4
+{
+    position: absolute;
+    top: 0;
+    // right: 0;
+    // bottom: 20px;
+    left: 0px;
+}
+div
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: gold;
+}
