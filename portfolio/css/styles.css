@@ -1,4 +1,69 @@
+body {
+  margin: 0;
+}
+
 html {
-  background-color: #006643;
+  height: 100%;
+  position: relative;
+  bottom: -50;
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main {
+  width: 50vw;
+  margin: auto;
+}
+
+#header {
+  text-align: center;
+  color: white;
+  width: 35vw;
+  height: 3vw;
+  margin: 6vw auto;
+  border-bottom: 2px solid white;
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#dropdown {
+  background-color: #d9d9d9;
+  width: 15vw;
+  padding: 10px;
+  color: black;
+}
+
+#nav#dropdown ul li {
+  position: relative;
+  display: inline-block;
+}
+
+#nav#dropdown ul li:nth-child(1):hover ul {
+  display: block;
+}
+
+@keyframes slide {
+  from {
+    bottom: -50px;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
