@@ -22,6 +22,11 @@ ul
     margin: 0;
     list-style: none;
 }
+h1, hr
+{
+    padding: 0;
+    margin: 0;
+}
 main
 {
     width: 50vw;
@@ -35,21 +40,50 @@ main
     height: 3vw;;
     margin: 6vw auto;
     border-bottom: 2px solid white;
+    font-family: 'Timmana', sans-serif;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    hr
+    {
+        height: 2px;
+        background-color: white;
+    }
+}
+#message
+{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.icon::before {
+    display: inline-block;
+    margin-right: .5em;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    font-size: 30px;
+    color: rgb(226, 110, 38);
     animation-name: slide;
     animation-duration: 1.5s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
-#dropdown
+nav#dropdown
 {
-    background-color: hsl(0, 0%, 85%);
-    width: 15vw;
+    background-color: transparent;
     padding: 10px;
     color: black;
 }
-#nav#dropdown ul
+nav#dropdown ul
 {
+    // background-color: hsla(15, 50%, 50%, .5);
     & li
     {
         position: relative;
@@ -62,7 +96,48 @@ main
             display: block;
         }
     }
-    
+    ul
+    {
+        display: none;
+        position: absolute;
+        background-color: hsl(0, 0%, 55%);
+        padding: 10px;
+        width: 200px;
+        li
+        {
+            white-space: nowrap;
+            display: block;
+        }
+        li:not(:last-child)
+        {
+            border-bottom: 1px solid hsl(185, 7%, 32%);
+        }
+        a
+        {
+            display: block;
+            padding-right: 20px;
+            transition: all 250ms;
+        }
+        a:hover
+        {
+            color: white;
+            border-left: 3px solid #F2752A;
+            text-indent: 3px;
+        }
+    }
+    a
+    {
+        display: inline-block;
+        padding: 5px;
+        color: inherit;
+        text-decoration: none;
+    }
+    a:hover
+    {
+        background-color: transparent;
+        transition-delay: 1ms;
+
+    }
 }
 @keyframes slide
 {

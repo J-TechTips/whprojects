@@ -22,6 +22,11 @@ ul {
   list-style: none;
 }
 
+h1, hr {
+  padding: 0;
+  margin: 0;
+}
+
 main {
   width: 50vw;
   margin: auto;
@@ -34,6 +39,36 @@ main {
   height: 3vw;
   margin: 6vw auto;
   border-bottom: 2px solid white;
+  font-family: 'Timmana', sans-serif;
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#header hr {
+  height: 2px;
+  background-color: white;
+}
+
+#message {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.icon::before {
+  display: inline-block;
+  margin-right: .5em;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  font-size: 30px;
+  color: #e26e26;
   animation-name: slide;
   animation-duration: 1.5s;
   animation-delay: 1.5s;
@@ -41,20 +76,60 @@ main {
   opacity: 0;
 }
 
-#dropdown {
-  background-color: #d9d9d9;
-  width: 15vw;
+nav#dropdown {
+  background-color: transparent;
   padding: 10px;
   color: black;
 }
 
-#nav#dropdown ul li {
+nav#dropdown ul li {
   position: relative;
   display: inline-block;
 }
 
-#nav#dropdown ul li:nth-child(1):hover ul {
+nav#dropdown ul li:nth-child(1):hover ul {
   display: block;
+}
+
+nav#dropdown ul ul {
+  display: none;
+  position: absolute;
+  background-color: #8c8c8c;
+  padding: 10px;
+  width: 200px;
+}
+
+nav#dropdown ul ul li {
+  white-space: nowrap;
+  display: block;
+}
+
+nav#dropdown ul ul li:not(:last-child) {
+  border-bottom: 1px solid #4c5657;
+}
+
+nav#dropdown ul ul a {
+  display: block;
+  padding-right: 20px;
+  transition: all 250ms;
+}
+
+nav#dropdown ul ul a:hover {
+  color: white;
+  border-left: 3px solid #F2752A;
+  text-indent: 3px;
+}
+
+nav#dropdown ul a {
+  display: inline-block;
+  padding: 5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav#dropdown ul a:hover {
+  background-color: transparent;
+  transition-delay: 1ms;
 }
 
 @keyframes slide {
