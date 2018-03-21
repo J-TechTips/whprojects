@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+button {
+  border: 1px solid darker(#303030, 10);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+h1 {
+  background-size: cover;
+  padding: 25px;
+}
+
+body {
+  background-color: white;
+  transition: background-color 500ms;
+}
+
+h1 {
+  text-align: center;
+}
+
+body.colorize {
+  background-color: black;
+  background-image: url("../images/aye.jpg");
+  background-position-x: center;
+  background-position-y: 200px;
+  background-repeat: no-repeat;
+}
+
+body.colorize nav {
+  background-color: steelblue;
+}
+
+nav {
+  padding: 10px;
+  background-color: #303030;
+  display: flex;
+  justify-content: flex-end;
+}
+/*# sourceMappingURL=style.css.map */
