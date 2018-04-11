@@ -9,3 +9,5 @@ open();
 var response = prompt("Hey what's your name?");
 alert("Nice to meet you " + response);
 
+// Asking about childhood friend
+prompt(response + " do you remeber your friend?");
