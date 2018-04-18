@@ -9,6 +9,9 @@ open();
 var name = prompt("Hey what's your name?");
 alert("Nice to meet you " + name);
 
+// Name of friend is grabbed here
+
+
 // Edit P  
 document.getElementById('start').innerHTML = name + ", Are you ready?";
 
