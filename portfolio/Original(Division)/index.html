@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
+<link rel="stylesheet" type="text/css" href="masterstyles.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+<meta charset="utf-8">
+<title>Jonathan Flores - Portfolio</title>
+<!--[if it IE 9]>
+<script src="html5shiv.js"></script>
+<![endif]-->
+<meta name="description" content="My Protfolio for Web Design">
+<meta name="keywords" content="My, Portfolio, Project">
+<meta name="author" content="Jonathan Flores">
+
+</head>
+<!--Jonathan Flores, 2-22-16, Project-->
+
+<body>
+
+		<!-- menu vertical -->
+<nav id="menu" class="left">
+  <ul>
+    <li><a href="http://chswebdesign.com/jflores052014/" class="active"><i class="fa fa-home"></i>Home</a></li>
+    <li><a href="#"><i class="fa fa-info-circle"></i>About</a></li>
+    <li> <a href="#"><i class="fa fa-laptop"></i>Services</a>  </li> 
+    <li><a target="blank" href="http://goo.gl/forms/pjL3kXCNTw"><i class="fa fa-phone"></i>Contact</a></li>
+  </ul>
+  <a href="#" id="showmenu"> <i class="fa fa-align-justify"></i> </a> </nav>
+		<!-- /menu vertical --> 		
+
+		<div id="text">
+        
+		Hello, I am Jonathan Flores
+		</div>
+        
+			<audio style="opacity:0" autoplay loop controls>
+            
+       			<!--
+       			I Do not own this song Credit to: Witt Lowry 
+        		Like I Do (Instrumental) by Tido Vegas
+				https://www.youtube.com/watch?v=XSXcWzk2fiA-->
+				<!--<source src="Images/Witt Lowry- Like I Do Instrumental.mp3" type="audio/mpeg">-->
+        
+			</audio>
+ 		<div id="test" class="animated  fadeInDown">
+		</div>
+
+<!-- contenido de pagina, realmente no importa -->
+<div id="container">
+  
+  
+</div>
+<!-- /contenido de pagina, realmente no importa --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$("#showmenu").click(function(e){
+			e.preventDefault();
+			$("#menu").toggleClass("show");
+		});
+</script>
+
+
+<!--FOR DISABLING RIGHT CLICK-->
+
+<script language=JavaScript> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+
+<!--FOR DISABLING F12-->
+
+<script>  
+document.onkeypress = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onmousedown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onkeydown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+</script>  
+
+</body>
+</html>
